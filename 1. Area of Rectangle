@@ -1,0 +1,18 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int l,b,a;
+    
+    cout << "Enter the length:";
+    cin >> l;
+    
+    cout << "Enter the breath:";
+    cin >> b;
+    
+    a = l * b;
+
+    cout << endl << endl << "Area of Rectange = " << a << endl;
+    cout << "Length = " << l << ", Breath = " << b << ", Area = " << a;
+}
