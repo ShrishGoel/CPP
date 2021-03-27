@@ -1,0 +1,23 @@
+// Opens a new bank account with a user defined balance and then shows that balance using OOP
+
+#include <iostream>
+using namespace std;
+
+class bank {
+    float bal;
+    public:
+    void openAccount() {
+        cout << "Enter Balance:";
+        cin >> bal;
+    }
+    void showBal() {
+        cout <<"Balance = " << bal;
+    }
+};
+
+int main()
+{
+    bank shrish;
+    shrish.openAccount();
+    shrish.showBal();
+}
