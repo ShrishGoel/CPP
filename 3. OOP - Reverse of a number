@@ -1,0 +1,31 @@
+// Reverses a number using OOP
+
+#include <iostream>
+
+using namespace std;
+
+class reverse {
+    int n = 0, rev = 0; 
+    public:
+    
+    void input() {
+        cout << "Enter the number:";
+        cin >> n;
+    }
+    void doReverse() {
+        int copy = n;
+        int r;
+        while(copy!=0) {
+            r = copy%10;
+            copy = copy/10;
+            rev = rev*10 + r;
+        }
+        cout << "The reverse of the number is: " << rev;
+    }
+};
+
+int main() {
+    reverse obj;
+    obj.input();
+    obj.doReverse();
+}
