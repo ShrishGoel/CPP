@@ -1,0 +1,35 @@
+// Makes two objects Shrish and William and then does some calculations on salary using OOP
+
+#include <iostream>
+
+using namespace std;
+
+class Employee {
+    float bs,da,hra,gs;
+    
+    public:
+    void input() {
+        cout << "Enter Basic Salary:";
+        cin >> bs;
+    }
+    void process() {
+        da = bs * 50/100;
+        hra = bs * 30/100;
+        gs = bs + da + hra;
+    }
+    void show() {
+        cout << endl << "Gross Salary = " << gs << endl;
+        cout << "DA = " << da << " HRA = " << hra << endl;
+    }
+};
+
+int main()
+{
+  Employee Shrish,William;
+  Shrish.input();
+  Shrish.process();
+  William.input();
+  William.process();
+  Shrish.show();
+  William.show();
+}
