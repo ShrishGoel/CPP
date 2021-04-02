@@ -1,0 +1,62 @@
+//Calculates area of square and rectangle using OOP-Compostion
+
+#include <iostream>
+using namespace std;
+class rect {
+    float l,b,perimeter;
+    
+    public:
+    void input() {
+        cout << "Enter the length and breath of the rectange:";
+        cin >> l >> b;
+    }
+    
+    void process() {
+        perimeter = l + l + b + b;
+    }
+    
+    void output() {
+        cout << "The perimeter of the rectangle is: " << perimeter;
+    }
+};
+
+class square {
+    float s,perimeter;
+    public: 
+    void input() {
+        cout << "Enter the side of the square";
+        cin >> s;
+    }
+    
+    void process() {
+        perimeter = s * 4;
+    }
+    
+    void output() {
+        cout << "\nThe perimeter of the square is: " << perimeter;
+    }
+    
+};
+
+class composition {
+    rect obj;
+    square obj2;
+    
+    public:
+    void comp() {
+        obj.input();
+        obj2.input();
+        obj.process();
+        obj2.process();
+        obj.output();
+        obj2.output();
+    }
+};
+
+
+
+int main() {
+    composition obj3;
+    
+    obj3.comp();
+}
