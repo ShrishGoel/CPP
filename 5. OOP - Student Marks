@@ -1,0 +1,27 @@
+// Takes in marks for three subjects and then calculates the total marks and the total percent.
+
+#include <iostream>
+using namespace std;
+class marks {
+    float c,node,java,total,percentage;
+    
+public:
+    void input() {
+        cout << "Enter your marks for c, node and java\n";
+        cin >> c >> node >> java;
+    }
+    void process() {
+        total = node + java + c;
+        percentage = total/3;
+    }
+    void output() {
+        cout << "The total marks is: "<< total << "\nThe average percent is: " << percentage << "%";
+    }
+};
+
+int main() {
+    marks obj;
+    obj.input();
+   obj.process();
+    obj.output();
+}
