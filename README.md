@@ -6,3 +6,4 @@ All my c++ Programs
 3. OOP - Reverse of a number - https://github.com/ShrishGoel/CPP/blob/main/3.%20OOP%20-%20Reverse%20of%20a%20number
 4. OOP - Employee - https://github.com/ShrishGoel/CPP/blob/main/4.%20OOP%20-%20Employee
 5. OOP - Student Marks - https://github.com/ShrishGoel/CPP/blob/main/5.%20OOP%20-%20Student%20Marks
+6. OOP-COMPOSITION-AREA - https://github.com/ShrishGoel/CPP/blob/main/6.%20OOP-COMPOSITION-AREA
