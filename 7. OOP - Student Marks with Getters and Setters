@@ -1,0 +1,34 @@
+//Calculates total marks for two subjects entered by the user using getters and setters
+
+#include <iostream>
+
+using namespace std;
+
+class student {
+    float CPP,JAVA,tot;
+    public:
+    void setMarks(float c,float j) {
+        CPP = c;
+        JAVA = j;
+    }
+    void process() {
+        tot = CPP + JAVA;
+    }
+    float getTotal() {
+        return tot;
+    }
+};
+
+int main() {
+    student amn;
+    int java;
+    int cpp;
+    cout << "Enter marks for CPP:";
+    cin >> cpp;
+    cout << "Enter marks for Java:";
+    cin >> java;
+    amn.setMarks(cpp,java);
+    amn.process();
+    float tot = amn.getTotal();
+    cout << "Total = " << tot;
+}
