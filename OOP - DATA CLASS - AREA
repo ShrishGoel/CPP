@@ -1,0 +1,47 @@
+// Calculates the area of a circle entered by the user using a data base class and a circle class 
+
+#include <iostream>
+
+using namespace std;
+
+class Data {
+    float r;
+    public:
+    void input() {
+        cout << "Enter the radius:";
+        cin >> r;
+    }
+    float getRadius() {
+        return r;
+    }
+    
+    
+};
+
+class Circle {
+    
+    float area,radius;
+    public:
+    void setRadius(float r) {
+        radius = r;
+    }
+    float getArea() {
+        area = 3.14 * radius * radius;
+        return area;
+    }
+    
+};
+
+
+
+
+int main()
+{
+    Data dobj;
+    dobj.input();
+    float radius = dobj.getRadius();
+    Circle obj;
+    obj.setRadius(radius);
+    float area = obj.getArea();
+    cout << "Area of the circle is: " << area;
+}
