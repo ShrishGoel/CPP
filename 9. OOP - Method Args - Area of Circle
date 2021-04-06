@@ -1,0 +1,35 @@
+// Calculates the area of a circle using OOP - Method Arguments
+
+
+#include <iostream>
+
+using namespace std;
+
+class circle {
+    float r,area;
+    public:
+    void recieve(int jassus) {
+        r = jassus;
+        process();
+    }
+    private:
+    void process() {
+        area = r * r * 3.14;
+    } 
+    public:
+    float returns() {
+        return area;
+    }
+};
+
+int main() {
+    float r;
+    cout << "Enter the radius of the circle: ";
+    cin >> r;
+    circle circl;
+    circl.recieve(r);
+    float area = circl.returns();
+    cout << "The area of the circle is: " << area;
+}
+
+
