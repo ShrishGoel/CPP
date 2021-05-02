@@ -1,0 +1,42 @@
+// Calculates Interest with one method call using oop
+
+#include <iostream>
+using namespace std;
+class interest {
+  float p,r,t,interest;
+  
+  public:
+  
+  void recieve(int a,int b,int c) {
+    p = a;
+    r = b;
+    t = c;
+    process();
+  }
+  
+  void process() {
+      interest = (p * r * t) /100;
+  }
+  
+  float returns() {
+      return interest;
+  }
+    
+};
+
+int main() {
+    float a,b,c;
+    cout << "Enter priciple,rate,time:";
+    cin >> a >> b >> c;
+    interest inter;
+    inter.recieve(a,b,c);
+    float pls = inter.returns();
+    cout << "The interest is: " << pls;
+    
+    
+    
+    
+    
+    
+    
+}
