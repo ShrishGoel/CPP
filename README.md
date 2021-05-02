@@ -11,3 +11,4 @@ All my c++ Programs
 8. OOP - DATA CLASS - AREA - https://github.com/ShrishGoel/CPP/blob/main/8.%20OOP%20-%20DATA%20CLASS%20-%20AREA
 9. OOP - Method Args - Area of Circle - https://github.com/ShrishGoel/CPP/blob/main/9.%20OOP%20-%20Method%20Args%20-%20Area%20of%20Circle
 10. OOP - Interest - https://github.com/ShrishGoel/CPP/blob/main/10.%20OOP%20-%20Interest
+11. OOP - One Method Call Interest - https://github.com/ShrishGoel/CPP/blob/main/11.%20OOP%20-%20%20One%20Method%20Call%20Interest
