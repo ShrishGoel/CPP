@@ -1,0 +1,41 @@
+// calculates the marks of a student using oop - getters and setters, method args
+
+#include <iostream>
+using namespace std;
+
+
+class marks {
+    float java,cd,node,total,average;
+    int x = 1;
+    public:
+    void recieve(int a, int b, int c) {
+        java = a;
+        cd = c;
+        node = c;
+        process();
+    }
+    
+    void process() {
+        total = java + cd + node;
+        average = total/3;
+    }
+    
+    float returntotal() {
+       return total;
+    }
+    
+    float returnav() {
+        return average;
+    }
+};
+    int main() {
+        float  c,node,java;
+        cout << "Enter marks for c,node,java";
+        cin >> c >> node >> java;
+        marks mark;
+        mark.recieve(c,node,java);
+        float total = mark.returntotal();
+        float average = mark.returnav();
+        cout << "The total and average marks are: " << total << " " << average;
+    }
+
