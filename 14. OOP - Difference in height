@@ -1,0 +1,55 @@
+//calculates difference in height using oop
+
+#include <iostream>
+using namespace std;
+
+class HEIGHT {
+public:
+  int f, i, total,dif;
+
+  void recive (int a, int b) {
+    f = a;
+    i = b;
+
+  }
+
+  HEIGHT party (HEIGHT b) {
+     HEIGHT jasus;
+     total = (f * 12) + i;
+     b.total = (b.f * 12) + b.i;
+     if(total > b.total) {
+         dif = total - b.total;
+     }
+     
+     else {
+         dif = b.total - total;
+     }
+    jasus.f = dif/12;
+    dif = dif - (jasus.f * 12);
+    jasus.i = dif;
+   return jasus;
+  }
+
+  float show ()  {
+    cout << "The difference in feet is: " << f << endl;
+    cout << "The difference in inches is: " << i;
+  }
+};
+
+
+
+int
+main () {
+  int fa, ia, fb, ib;
+  cout << "Enter the height in feet and inches of person 1:";
+  cin >> fa >> ia;
+  cout << "Enter the height in feet and inches of person 2:";
+  cin >> fb >> ib;
+  HEIGHT a;
+  HEIGHT b;
+  a.recive (fa, ia);
+  b.recive (fb, ib);
+  HEIGHT jk = a.party(b);
+  jk.show ();
+}
+
