@@ -1,0 +1,78 @@
+// A program for a cashier at a market
+
+
+#include <iostream>
+
+using namespace std;
+
+class store {
+  string name;
+  float price,quantity,netprice,discount,averagediscount = 0;
+  float totalbill = 0;
+   public:
+   void input(int n,int x) {
+       cout << "Enter the name of the " << n+1 << " product:";
+       cin >> name;
+       cout << "Enter the price of " << name << " object:";
+       cin >> price;
+       cout << "Enter the quantity of the " << name << " object:";
+       cin >> quantity;
+       cout << "Enter the discount on the " << name << " object:";
+       cin >> discount;
+      cout << endl;
+       process(x);
+   }
+   
+   void process(int x) {
+       netprice = (price - price * discount/100) * quantity;
+       averagediscount = averagediscount + discount;
+   }
+   
+   float netprices() {
+       return netprice;
+   }
+   float prices() {
+       return price;
+   }
+   float averagediscounts() {
+       return averagediscount;
+   }
+
+string namepls() {
+    return name;
+}
+    
+};
+
+int main() {
+    int maximum;
+    
+    int n;
+    cout << "How many products?";
+    cin >> n;
+    store array[n];
+    int y = 0;
+    int max = 0; 
+    for(int x = 0; x < n; x++) {
+        array[x].input(y,n);
+        y++;
+        float z = array[x].prices();
+        if(z > max) {
+            max = z;
+        }
+        
+    }
+    int x = 1; 
+    for(int x = 0; x < n; x++) {
+        float z = array[x].netprices();
+        string a = array[x].namepls();
+        cout << "The netprice of the " << a << " is " << z << endl;
+        
+    }
+    cout << endl;
+    cout << "The maximum price is: " << max << endl;
+    float a = array[x].averagediscounts();
+    cout << "The average discount is: " << a << "%";
+}
+
+
