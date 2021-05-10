@@ -1,0 +1,57 @@
+// Finds difference in time using oop programming style
+
+#include <iostream>
+using namespace std;
+
+class TIME {
+  int h,m,s,total,dif;
+  
+  public:
+  void recive(int a,int b,int c) {
+      h = a;
+      m = b;
+      s = c;
+  }
+  
+  TIME party(TIME b) {
+      TIME jassus;
+      total = (h * 3600) + (m * 60) + s;
+      b.total = (b.h*3600) + (b.h * 60) + b.s;
+      if(total > b.total) {
+          dif = total - b.total;
+      }
+      else {
+          dif = b.total - total;
+      }
+      jassus.h = dif/3600;
+      dif = dif - (jassus.h * 3600);
+     jassus.m = dif/60;
+     dif = dif - (jassus.m * 60);
+      jassus.s = dif;
+      return jassus;
+  }  
+  
+  void show() {
+      cout << h << endl;
+      cout << m - 1 << endl;
+      cout << s;
+  }
+    
+};
+
+int main() {
+    int ha, ma, sa, hb, mb, sb;
+    
+    cout << "Enter time:";
+    cin >> ha >> ma >> sa;
+    
+    cout << "Enter time:";
+    cin >> hb >> mb >> sb;
+    TIME a;
+    TIME b;
+    
+    a.recive(ha,ma,sa);
+    b.recive(hb,mb,sb);
+    TIME yay = a.party(b);
+    yay.show();
+}
