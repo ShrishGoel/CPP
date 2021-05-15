@@ -1,0 +1,40 @@
+#include <iostream>
+using namespace std;
+class HEIGHT;
+class RADIUS {
+    int r;
+    public:
+    void inputradius() {
+        cout << "Enter the radius:";
+        cin >> r;
+    }
+    friend void cylindervolume(RADIUS r , HEIGHT h);
+};
+
+class HEIGHT {
+    int h;
+    public:
+    void inputheight() {
+        cout << "Enter the height:";
+        cin  >> h;
+    }
+    friend void cylindervolume(RADIUS r , HEIGHT h);
+};
+
+void cylindervolume(RADIUS r, HEIGHT h) {
+    
+    float volume = 3.14 * r.r * r.r * h.h;
+    cout << "The volume of the cylinder is: " << volume;
+}
+
+int main() {
+    RADIUS obj;
+    HEIGHT obj1;
+    obj.inputradius();
+    obj1.inputheight();
+    cylindervolume(obj,obj1);
+}
+
+
+
+
