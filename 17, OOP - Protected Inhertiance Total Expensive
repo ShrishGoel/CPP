@@ -1,0 +1,50 @@
+// calculates total expense using protected inheritance
+
+#include <iostream>
+using namespace std;
+
+class COLLEGE {
+    protected:
+    int cfee;
+    public:
+    void input_cfee() {
+        cout << "Enter the college fee:";
+        cin >> cfee;
+    }
+};
+
+class training {
+    protected:
+    int t;
+    public:
+    void input_t() {
+        cout << "Enter training fee:";
+        cin >> t;
+    }
+};
+class rent {
+    protected:
+  int rent;
+    public:
+    void input_rent() {
+        cout << "Enter your house rent:";
+        cin >> rent;
+    }
+};
+
+class process :public COLLEGE, public training, public rent {
+    int total_expense;
+    public:
+    void show() {
+        input_cfee();
+        input_t();
+        input_rent();
+        total_expense = rent + t + cfee;
+        cout << "Your total expense is: $" << total_expense;
+    }
+};
+
+int main() {
+    process obj;
+    obj.show();
+}
