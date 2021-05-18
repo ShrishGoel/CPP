@@ -18,3 +18,4 @@ All my c++ Programs
 15. OOP - Difference in time - https://github.com/ShrishGoel/CPP/blob/main/15.%20OOP%20-%20Difference%20in%20time
 16. OOP - Friend classes volume - https://github.com/ShrishGoel/CPP/blob/main/16.%20OOP%20-%20Friend%20classes%20volume
 17. OOP - Protected Inhertiance Total Expensive - https://github.com/ShrishGoel/CPP/blob/main/17%2C%20OOP%20-%20Protected%20Inhertiance%20Total%20Expensive
+18. OOP - Constuctors with friends Sum - https://github.com/ShrishGoel/CPP/blob/main/18.%20OOP%20-%20Constuctors%20with%20friends%20Sum 
