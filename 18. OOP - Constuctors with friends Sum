@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+class height;
+class radius {
+    int r;
+    public:
+    radius() {
+        cout << "Enter radius";
+        cin >> r;
+    }
+    friend void process(radius r, height h);
+};
+
+class height {
+    int h;
+    public:
+    height() {
+        cout <<"Enter the height";
+        cin >> h;
+    }
+    friend void process(radius r, height h);
+};
+
+void process(radius r, height h) {
+    int sum = r.r + h.h;
+    cout << "The sum is: " << sum;
+};
+
+int main() {
+    radius r;
+    height h;
+    process(r,h);
+}
