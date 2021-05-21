@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+#include <cstdlib>
+class HEIGHT {
+    int f,i,dif;
+    public:
+    HEIGHT() {
+        cout<<"Enter height of person in feet and inches:";
+        cin >> f >> i;
+    }
+    
+    void operator-=(HEIGHT obj2) {
+        i = i + f*12;
+        obj2.i = obj2.i + obj2.f*12;
+        dif = abs(obj2.i - i);
+        f = dif/12;
+        i = dif - f*12;
+    }
+    
+    void show() {
+        cout<<"The difference is height is: " << f << " " << i;
+    }
+};
+
+int main() {
+    HEIGHT obj1;
+    HEIGHT obj2;
+    obj1-=obj2;
+    obj1.show();
+}
+
