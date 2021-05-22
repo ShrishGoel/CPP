@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+#include <cstdlib>
+class TIMES {
+    int h,m,s,dif,sum1,sum2;
+    
+    public:
+    
+    TIMES() {
+        cout<<"Enter time is hours, minutes, seconds:";
+        cin >> h >> m >> s; 
+    }
+    
+    void operator-=(TIMES obj2) {
+        sum1 = h * 3600 + m * 60 + s;
+        sum2 = obj2.h * 3600 + obj2.m * 60 + obj2.s;
+        dif = abs(sum2 - sum1);
+        h = dif/3600;
+        dif = dif - h*3600;
+        m = dif/60;
+        dif = dif - m * 60;
+        s = dif;
+    }
+    
+    void show() {
+        cout<<"The difference in time is:" << h << " " << m << " " << s;
+    }
+};
+
+int main() {
+    TIMES obj1;
+    TIMES obj2;
+    
+    obj1-=obj2;
+    obj1.show();
+}
