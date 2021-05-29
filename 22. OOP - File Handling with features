@@ -1,0 +1,45 @@
+#include <iostream>
+#include <fstream>
+
+using namespace std;
+
+int main() {
+    ofstream fout;
+    char file[100];
+    
+    int choice;
+    
+    cout << "What would you like to do?" << endl;
+    cout << "1.Count chars in a file?" << endl;
+    cout << "2.Count capital and lower letters in a file:" << endl;
+    cout << "3.Copy one file to another?";
+    cout << "4.Exit";
+    
+    while(1) {
+    switch(choice) {
+    case 1:
+    
+    cout << "Enter file name" << endl;
+    cin >> file;
+    fout.open(file,ios::in);
+    
+
+    
+    fout(want);
+    int count = 0;
+    while(!fout.eof()) {
+        count ++;
+    }
+
+    fout.close();
+    break;
+    
+    case 2:
+    
+    cout << "Enter file name:" << endl;
+    cin >> file;
+    fout.open(file,ios::in);
+    fout.close();
+    }
+   }
+}
