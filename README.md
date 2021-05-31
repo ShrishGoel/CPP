@@ -23,3 +23,4 @@ All my c++ Programs
 20. OOP - Operator overloading - difference in time - https://github.com/ShrishGoel/CPP/blob/main/20.%20OOP%20-%20Operator%20overloading%20-%20difference%20in%20time
 21. OOP - memory saving - interest - https://github.com/ShrishGoel/CPP/blob/main/21.%20OOP%20-%20memory%20saving%20-%20interest
 22. OOP - File Handling with features - https://github.com/ShrishGoel/CPP/blob/main/22.%20OOP%20-%20File%20Handling%20with%20features
+23. OOP - Chars Counter in file - https://github.com/ShrishGoel/CPP/blob/main/23.%20OOP%20-%20Chars%20Counter%20in%20file
