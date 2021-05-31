@@ -1,0 +1,41 @@
+#include <iostream>
+#include <fstream>
+#include<stdio.h>
+
+using namespace std;
+
+int main() {
+    ofstream fout;
+    
+    char file[100];
+    char want[100];
+    
+    
+    cout << "Enter the file name that you want to open:";
+    cin.getline(file,100);
+    
+   fout.open(file,ios::out);
+    cout << "Enter what you want in your file:";
+    cin.getline(want,100);
+    
+    fout << want;
+    fout.close();
+    
+    
+   ifstream fin;
+   
+    fin.open(file,ios::in);
+    int count = 0; 
+    
+   while(!fin.eof()) {
+      char c = fin.get();
+      /*if(c == 0) {
+        break;
+      }*/
+      count++;
+    }
+    
+    fout.close();
+    cout << "Total number of chars in your file is: " << count - 1;
+    
+}
