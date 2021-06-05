@@ -1,0 +1,37 @@
+#include <iostream>
+#include <fstream>
+
+using namespace std;
+
+int main() {
+    ofstream fout;
+    char file[100];
+    char want[100];
+    cout << "Enter the file name that you want to open:";
+    cin >> file;
+    fout.open(file,ios::out);
+    cout << "Enter what you want in your file:";
+    cin >> want;
+    fout << want;
+    fout.close();
+    
+    ifstream fin;
+    
+    fin.open(file,ios::in);
+    int uppercase = 0;
+    int lowercase = 0;
+    
+    while(!fin.eof()) {
+        char c = fin.get();
+        if(c >= 'a' && c <= 'z') {
+            lowercase++;
+        }
+        else if(c >= 'A' && c <= 'Z') {
+            uppercase++;
+        }
+        
+    }
+    fin.close();
+    cout << "The number of lower case letters is: " << lowercase << endl;
+    cout << "The number of upper case letters are: " << uppercase;
+}
