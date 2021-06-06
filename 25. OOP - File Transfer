@@ -1,0 +1,43 @@
+#include <iostream>
+#include <fstream>
+
+using namespace std;
+
+int
+main ()
+{
+  ofstream fout;
+
+  char file[100];
+  char file2[100];
+  char want[100];
+
+  cout << "Enter the file name that you want to open:";
+  cin >> file;
+  cout << "Enter the name of file 2: ";
+  cin >> file2;
+  fout.open (file, ios::out);
+ 
+  cout << "Enter what you want in your file:";
+  cin >> want;
+  fout << want;
+
+  fout.close ();
+
+  ifstream fin;
+  ofstream fin2;
+
+  fin.open (file, ios::in);
+  fin2.open (file2, ios::out);
+
+  while (!fin.eof ())
+    {
+      char c = fin.get ();
+      fin2 << c;
+    }
+  fin.close ();
+  fin2.close ();
+  cout << "File transformation successful";
+
+}
+
