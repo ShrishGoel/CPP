@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+class Product {
+    
+    float price,bill;
+    int qty;
+    
+    public:
+    
+    void input() {
+        cout << "Enter the price and quantity:";
+        cin >> price >> qty;
+    }
+    
+    void billing() {
+        bill = price * qty;
+        cout << "Bill = " << bill;
+    }
+};
+
+int main() {
+    Product obj;
+    Product *ptr;
+    ptr = &obj;
+    
+    (*ptr).input();
+    (*ptr).billing();
+    return 0;
+}
