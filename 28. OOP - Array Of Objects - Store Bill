@@ -1,0 +1,78 @@
+#include <iostream>
+using namespace std;
+
+class Store {
+    float price,qty,bill,net,discount;
+    char n[100];
+    
+    public:
+    void name(int i) {
+        cout << "Enter the name of " << i << " person:";
+        cin >> n;
+    }
+    void items() {
+        cout << "Enter the price and qty:";
+        cin >> price >> qty;
+    }
+    void doBill() {
+        bill = qty * price;
+    }
+    void show() {
+        cout << "Bill is: " << bill << endl;
+        cout << "Net is: " << net << endl;
+    }
+    void doNet() {
+        discount = bill * 10/100;
+        net = bill - discount;
+    }
+    float getDis() {
+        return discount;
+    }
+    float getBill() {
+        return bill;
+    }
+    float getNet() {
+        return net;
+    }
+};
+
+
+int main() {
+    int n,i;
+    
+    cout << "Enter the number of customers:";
+    cin >> n;
+    
+    Store ary[n];
+    i = 0;
+    
+    while(i < n) {
+        ary[i].name(i);
+        ary[i].items();
+        ary[i].doBill();
+        ary[i].doNet();
+        i++;
+    }
+    
+    cout << "Slip \n";
+    
+    float max = ary[0].getNet();
+    float min = ary[0].getBill();
+    
+    float sum = 0;
+    for(int i = 0; i<n; i++) {
+        ary[i].show();
+        
+        sum+=ary[i].getDis();
+        if(max < ary[i].getNet()) {
+            max = ary[i].getNet();
+        }
+        if(min > ary[i].getBill()) {
+            min = ary[i].getBill();
+        }
+    }
+    
+    cout << "Max Net = " << max << endl;
+    cout << "Min Bill = " << min << endl;
+    cout << "Average Discount = " << sum << endl;
+}
