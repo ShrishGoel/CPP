@@ -1,0 +1,46 @@
+#include <iostream>
+using namespace std;
+
+class Bank {
+    int sb,cb;
+    
+    public:
+    
+    void setBal(int s, int c) {
+        sb = s;
+        cb = c;
+    }
+    void show() {
+        cout << sb << " " << cb << endl;    
+    }
+    void sum(Bank robj) {
+        sb = sb + robj.sb;
+        cb = cb + robj.cb;
+    }
+    Bank sumReturn(Bank aobj) {
+        Bank tempObj;
+        
+        tempObj.sb = sb + aobj.sb;
+        tempObj.cb = cb + aobj.cb;
+        
+        return tempObj;
+    }
+};
+
+
+int main() {
+    Bank Shrish;
+    
+    Shrish.setBal(1000000,2000000);
+    
+    Bank Obj;
+    
+    Obj.setBal(50000,50000);
+    
+    Shrish.sum(Obj);
+    Shrish.show();
+    Obj.show();
+    
+    Bank Friend = Shrish.sumReturn(Obj);
+    Friend.show();
+}
