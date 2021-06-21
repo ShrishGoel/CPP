@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+
+
+class Height {
+    int f,i;
+    public:
+    void input() {
+        cout << "Enter the feet and inch:";
+        cin >> f >> i;
+    }
+    void show() {
+        cout << f << " " << i << endl;
+    }
+    Height getDiff(Height obj) {
+        Height tempObj;
+        
+        int df = (f * 12 + i) - (obj.f * 12 + obj.i);
+        df = abs(df);
+        tempObj.f = df/12;
+        tempObj.i = df%12;
+        return tempObj;
+    }
+};
+
+int main() {
+ 
+    Height Obj1, Obj2;
+    
+    Obj1.input();
+    Obj2.input();
+    
+    Height dif = Obj1.getDiff(Obj2);
+    dif.show();
+    return 0;
+}
