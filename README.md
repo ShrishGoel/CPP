@@ -32,3 +32,4 @@ All my c++ Programs
 29. OOP - Passing and Returning Objects - Bank - https://github.com/ShrishGoel/CPP/blob/main/29.%20OOP%20-%20Passing%20and%20Returning%20Objects%20-%20Bank
 30. OOP - Passing and Returning Objects - Dif in Height - https://github.com/ShrishGoel/CPP/blob/main/30.%20OOP%20-%20Passing%20and%20Returning%20Objects%20-%20Dif%20in%20Height
 31. OOP - Reference Swap - https://github.com/ShrishGoel/CPP/blob/main/31.%20OOP%20-%20Reference%20Swap
+32. OOP - Friend Functions - Product - https://github.com/ShrishGoel/CPP/blob/main/32.%20OOP%20-%20Friend%20Functions%20-%20Product
