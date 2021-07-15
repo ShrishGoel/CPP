@@ -1,0 +1,36 @@
+#include <iostream>
+
+using namespace std;
+
+class Bank {
+    float bal;
+    
+    public:
+    Bank() {
+        bal = 50;
+    }
+    Bank(float b) {
+        bal = b;
+    }
+    Bank(Bank &obj) {
+        bal = obj.bal;
+    }
+    void show() {
+        cout << "Bal: " << bal << endl;
+    }
+    
+    ~Bank() {
+        cout << "Bank Account Deleted!" << endl;
+    }
+};
+int main()
+{
+    Bank x;
+    x.show();
+    Bank y(8000);
+    y.show();
+    Bank z(y);
+    z.show();
+    cout << endl;
+    return 0;
+}
