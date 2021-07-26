@@ -34,3 +34,4 @@ All my c++ Programs
 31. OOP - Reference Swap - https://github.com/ShrishGoel/CPP/blob/main/31.%20OOP%20-%20Reference%20Swap
 32. OOP - Friend Functions - Product - https://github.com/ShrishGoel/CPP/blob/main/32.%20OOP%20-%20Friend%20Functions%20-%20Product
 33. OOP - Constructors and Destructors - Bank - https://github.com/ShrishGoel/CPP/blob/main/33.%20OOP%20-%20Constructors%20and%20Destructors%20-%20Bank
+34. OOP - Inheritance - Area - https://github.com/ShrishGoel/CPP/blob/main/34.%20OOP%20-%20Inheritance%20-%20Area
