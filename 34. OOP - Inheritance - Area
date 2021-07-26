@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+class Maths {
+    public:
+    
+    float pi = 3.14;
+    float getSquare(float r) {
+        return (r * r);
+    }
+};
+
+class Circle: public Maths {
+    
+    float ar,r;
+    public:
+    void area() {
+        cout << "Enter Radius:";
+        cin >> r;                               
+        ar = pi*getSquare(r);
+        cout << "Area:" << ar;
+    }
+};
+
+int main() {
+    Circle obj;
+    obj.area();
+    return 0;
+}
