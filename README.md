@@ -35,3 +35,4 @@ All my c++ Programs
 32. OOP - Friend Functions - Product - https://github.com/ShrishGoel/CPP/blob/main/32.%20OOP%20-%20Friend%20Functions%20-%20Product
 33. OOP - Constructors and Destructors - Bank - https://github.com/ShrishGoel/CPP/blob/main/33.%20OOP%20-%20Constructors%20and%20Destructors%20-%20Bank
 34. OOP - Inheritance - Area - https://github.com/ShrishGoel/CPP/blob/main/34.%20OOP%20-%20Inheritance%20-%20Area
+35. OOP - Inheritance - Shapes - https://github.com/ShrishGoel/CPP/blob/main/35.%20OOP%20-%20Inheritance%20-%20Shapes
