@@ -1,0 +1,42 @@
+#include <iostream>
+
+using namespace std;
+
+class Rect {
+    public:
+    void Rarea() {
+        cout << "Area of rect";
+    }
+};
+
+class Square:public Rect {
+    public:
+    void Sarea() {
+        cout << "Area of square";
+    }
+};
+
+class Circle {
+    public:
+    void Carea() {
+        cout<<"Area of circle";
+    }
+};
+
+class Shapes:public Square, public Circle {
+    public:
+    void callAll() {
+        Rarea();
+        Sarea();
+        Carea();
+    }
+};
+
+int main() {
+    Shapes obj;
+    obj.Rarea();
+    obj.Sarea();
+    obj.Carea();
+    cout << "\n\n\n\n";
+    obj.callAll();
+}   
