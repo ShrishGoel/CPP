@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+class Rect {
+    public:
+    
+    void area() {
+        cout << "Area of rect:\n";
+    }
+};
+
+class Circle: public Rect {
+    public:
+    
+    void area() {
+        cout << "Area of circle:\n";
+    }
+};
+
+int main() {
+    Circle obj;
+    
+    obj.area();
+    obj.Rect::area(); 
+}
