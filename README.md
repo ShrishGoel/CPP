@@ -38,3 +38,4 @@ All my c++ Programs
 35. OOP - Inheritance - Shapes - https://github.com/ShrishGoel/CPP/blob/main/35.%20OOP%20-%20Inheritance%20-%20Shapes
 36. OOP - Ambiguity - Shapes - https://github.com/ShrishGoel/CPP/blob/main/36.%20OOP%20-%20Ambiguity%20-%20Shapes
 37. OOP - Method Overriding - Area - https://github.com/ShrishGoel/CPP/blob/main/37.%20OOP%20-%20Method%20Overriding%20-%20Area
+38. OOP - Member Access - Public Memebers of Class - https://github.com/ShrishGoel/CPP/blob/main/38.%20OOP%20-%20Member%20Access%20-%20Public%20Memebers%20of%20Class
