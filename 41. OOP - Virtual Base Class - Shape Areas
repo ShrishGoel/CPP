@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+// Virtual Bare class prevents ambiguity in this case because of the inhertiance of the areas method.  
+class Area {
+    public:
+    void areas() {
+        cout << "Area of Shapes\n";
+    }
+};
+
+class Circle: virtual public Area {
+    void carea() {
+        cout << "Area of Circle\n";
+    }
+};
+
+class Square: virtual public Area {
+     void sarea() {
+        cout << "Area of Square\n";
+    }
+};
+
+class Shapes: public Circle, public Square {
+    
+};
+
+int main() {
+    Shapes obj;
+    obj.areas();
+}
