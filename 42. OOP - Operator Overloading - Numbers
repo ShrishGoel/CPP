@@ -1,0 +1,47 @@
+#include <iostream>
+using namespace std;
+
+class Complex {
+    int R,I;
+    
+    public:
+    void input() {
+        cout << "Enter two numbers:";
+        cin >> R >> I;
+        
+    }
+    
+    void operator ++() {
+        R++; I++;
+    }
+    void show() {
+        cout << R << " " << I << endl;
+    }
+    void operator ++(int) {
+        R++; I++;
+    }
+    void operator += (Complex obj2) {
+        R = R + obj2.R;
+        I = I + obj2.I;
+    }
+    Complex operator +(Complex obj1) {
+        Complex shipObj;
+        shipObj.R = R + obj1.R;
+        shipObj.I = I + obj1.I;
+        return shipObj;
+    }
+};
+int main() {
+    Complex C1Obj, C2Obj;
+    C1Obj.input();
+    C1Obj++;
+    C1Obj.show();
+    C1Obj++;
+    C1Obj.show();
+    C2Obj.input();
+    C1Obj+=C2Obj;
+    C1Obj.show();
+    Complex C3Obj = C1Obj + C2Obj;
+    C3Obj.show();
+    return 0;
+}
