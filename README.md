@@ -42,3 +42,4 @@ All my c++ Programs
 39. OOP - Member Access - Protected Members of Class - https://github.com/ShrishGoel/CPP/blob/main/39.%20OOP%20-%20Member%20Access%20-%20Protected%20Members%20of%20Class
 40. OOP - Inhertiance - Constructors and Destructors - https://github.com/ShrishGoel/CPP/blob/main/40.%20OOP%20-%20Inhertiance%20-%20Constructors%20and%20Destructors
 41. OOP - Virtual Base Class - Shape Areas - https://github.com/ShrishGoel/CPP/blob/main/41.%20OOP%20-%20Virtual%20Base%20Class%20-%20Shape%20Areas
+42. OOP - Operator Overloading - Numbers - https://github.com/ShrishGoel/CPP/blob/main/42.%20OOP%20-%20Operator%20Overloading%20-%20Numbers
