@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+class Test {
+    public:
+    void test() {
+        int n;
+        cin >> n;
+        int *x = &n;
+        cout << ++*x << endl;
+        cout << *x++ << endl;
+        cout << *x << endl;
+    }
+};
+
+int main() {
+   Test obj;
+   obj.test();
+}
