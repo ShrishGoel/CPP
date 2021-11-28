@@ -43,3 +43,4 @@ All my c++ Programs
 40. OOP - Inhertiance - Constructors and Destructors - https://github.com/ShrishGoel/CPP/blob/main/40.%20OOP%20-%20Inhertiance%20-%20Constructors%20and%20Destructors
 41. OOP - Virtual Base Class - Shape Areas - https://github.com/ShrishGoel/CPP/blob/main/41.%20OOP%20-%20Virtual%20Base%20Class%20-%20Shape%20Areas
 42. OOP - Operator Overloading - Numbers - https://github.com/ShrishGoel/CPP/blob/main/42.%20OOP%20-%20Operator%20Overloading%20-%20Numbers
+43. OOP - Pointers - https://github.com/ShrishGoel/CPP/blob/main/43.%20OOP%20-%20Pointers
