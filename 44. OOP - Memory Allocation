@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int *v = new int();
+    *v = 5;
+    cout << "*v = " << *v << endl;
+    delete v;
+    cout << "*v = " << *v << endl;
+    float *f;
+    f = new float();
+    *f = 3.8;
+    cout << "*f = "<< *f << endl;
+    *f = 2;
+    cout << "*f = " << *f << endl;
+    *f = NULL;
+    cout << "*f = " << *f << endl;
+    return 0;
+}
