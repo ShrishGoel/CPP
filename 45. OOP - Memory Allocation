@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int N,I;
+    
+    cout << "Enter the length of Array:";
+    cin >> N;
+    int *A = new int [N];
+    
+    for(I = 0; I < N; I++) {
+        cout << "Enter the " << I << " value:";
+        cin >> *(A+I);
+    }
+    
+    cout << "Output:\n";
+    
+    for(I = 0; I < N; I++) {
+        cout << A[I] << ",";
+    }
+
+    delete []A;
+    return 0;
+   
+}
