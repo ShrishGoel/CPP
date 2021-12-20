@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+class Mathslib {
+    public:
+    static float getSquare(float r) {
+        return (r*r);
+    }
+};
+
+class Circle {
+    float r,ar;
+    public:
+    void area() {
+        cout << "Enter Radius:";
+        cin >> r;
+        ar = 3.14 * Mathslib::getSquare(r);
+        cout << "Area of circle = " << ar;
+    }
+};
+
+int main()  {
+    float sq = Mathslib::getSquare(10);
+    cout << sq << endl;
+    Circle obj;
+    obj.area();
+
+    return 0;
+}
