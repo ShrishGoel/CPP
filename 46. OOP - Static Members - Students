@@ -1,0 +1,37 @@
+#include <iostream>
+using namespace std;
+
+class Student {
+    static int count;
+    int Enrollment_ID;
+    
+    public:
+    Student(int ID) {
+        count = count + 1;
+        Enrollment_ID = ID;
+    }
+    
+    void show() {
+        cout << "\nEnrollment ID: " << Enrollment_ID;
+        cout << "\nTotal Students: " << count;
+    }
+    ~Student() {
+        count = count - 1;
+    }
+};
+
+int Student::count = 0;
+
+
+int main() {
+    Student A(9);
+    Student B(15);
+    A.show();
+    B.show();
+    Student *C = new Student(21);
+    C->show();
+    delete C;
+    B.show();
+
+    return 0;
+}
