@@ -47,3 +47,4 @@ All my c++ Programs
 44. OOP - Memory Allocation - https://github.com/ShrishGoel/CPP/blob/main/44.%20OOP%20-%20Memory%20Allocation
 45. OOP - Memory Allocation in Arrays - https://github.com/ShrishGoel/CPP/blob/main/45.%20OOP%20-%20Memory%20Allocation%20in%20Arrays 
 46. OOP - Static Members - Students - https://github.com/ShrishGoel/CPP/blob/main/46.%20OOP%20-%20Static%20Members%20-%20Students
+47. OOP - Static Methods - Area - https://github.com/ShrishGoel/CPP/blob/main/47.%20OOP%20-%20Static%20Methods%20-%20Area
