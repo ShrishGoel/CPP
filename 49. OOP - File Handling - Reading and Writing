@@ -1,0 +1,21 @@
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main() {
+    ofstream fout;
+    
+    fout.open("result.txt",ios::out);
+    fout << "C++ \n";
+    fout << "Java \n";
+    fout.close();
+    
+    ifstream fin;
+    fin.open("result.txt",ios::in);
+    while(!fin.eof()) {
+        char ch = fin.get();
+        cout << ch;
+    }
+    fin.close();
+    return 0;
+}
