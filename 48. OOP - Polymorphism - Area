@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+class Rect {
+    public:
+    virtual void area() {
+        cout << "Area of Rect \n";
+        
+    }
+};
+
+class Circle : public Rect {
+    public:
+    void area() {
+        cout << "Area of Circle \n";
+    }
+};
+
+
+int main() {
+    Rect robj,*ptr;
+    ptr = &robj;
+    (*ptr).area();
+    ptr->area();
+    
+    Circle cobj;
+    ptr = &cobj;
+    ptr->area();
+    return 0;
+}
