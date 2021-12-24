@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+class Product {
+    int price,qty;
+    
+    public:
+    void setData(int price, int qty) {
+        this->price = price;
+        (*this).qty = qty;
+    }
+    void billing() {
+        cout << price * qty;
+    }
+};
+
+int main() {
+    Product *PenObj = new Product;
+    (*PenObj).setData(50,25);
+    (*PenObj).billing();
+
+    return 0;
+}
